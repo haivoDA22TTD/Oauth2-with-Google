@@ -1,0 +1,13 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: google
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: ## Thay bằng client-id của ứng dụng trên google cloud console
+            client-secret: ## Thay bằng client-secret của ứng dụng trên google cloud console
+            scope: email,profile
